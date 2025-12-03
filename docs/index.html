@@ -23,7 +23,130 @@
         <span class="user">groovy_toad909</span>@<span class="host">blog</span>:<span class="path">~</span>$ echo "notes, logs, experiments"
       </div>
     </header>
-    <!-- content truncated for brevity -->
+
+    <nav class="nav">
+      <span class="prompt">groovy_toad909@blog:~$</span>
+      <a href="#home"   class="nav-link">cat README</a>
+      <a href="#log"    class="nav-link">ls log/</a>
+      <a href="#notes"  class="nav-link">ls notes/</a>
+      <a href="#about"  class="nav-link">cat about.txt</a>
+      <a href="#meta"   class="nav-link">tree</a>
+    </nav>
+
+    <main class="main">
+      <section id="home" class="block">
+        <div class="prompt-line">
+          <span class="prompt">groovy_toad909@blog:~$</span> cat README
+        </div>
+        <p>
+          This is a tiny, old-school, bash-flavored corner of the web for
+          my learning notes and experiments. Expect:
+        </p>
+        <ul>
+          <li>short logs of what I’m learning</li>
+          <li>command snippets and configs</li>
+          <li>mistakes, fixes, and “aha” moments</li>
+        </ul>
+        <p class="hint"># tip: treat each section below like a directory in your brain.</p>
+      </section>
+
+      <section id="log" class="block">
+        <div class="prompt-line">
+          <span class="prompt">groovy_toad909@blog:~$</span> ls log/
+        </div>
+        <ul class="post-list">
+          <li class="post">
+            <div class="post-header">
+              <span class="post-date">2025-12-03</span>
+              <span class="post-tags">#linux #bash</span>
+            </div>
+            <h2 class="post-title">shell-session-0001: getting comfortable with the prompt</h2>
+            <p class="post-body">
+              This is a placeholder entry. Replace me with a summary
+              of what you learned: a command, a concept, a bug you fixed.
+            </p>
+          </li>
+
+          <li class="post draft">
+            <div class="post-header">
+              <span class="post-date">WIP</span>
+              <span class="post-tags">#topic-here</span>
+            </div>
+            <h2 class="post-title">shell-session-0002: &lt;title here&gt;</h2>
+            <p class="post-body">
+              Draft post. Duplicate this block for new log entries.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="notes" class="block">
+        <div class="prompt-line">
+          <span class="prompt">groovy_toad909@blog:~$</span> ls notes/
+        </div>
+
+        <div class="notes-grid">
+          <article class="note">
+            <h3 class="note-title">notes/bash-basics.md</h3>
+            <ul class="note-list">
+              <li><code>set -euo pipefail</code> for safer scripts</li>
+              <li>quote variables: <code>"$var"</code></li>
+              <li>prefer functions instead of loose script files</li>
+            </ul>
+          </article>
+
+          <article class="note">
+            <h3 class="note-title">notes/linux-internals.md</h3>
+            <ul class="note-list">
+              <li>process vs thread</li>
+              <li>syscalls, kernel space, user space</li>
+              <li>todo: expand with more notes</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="block">
+        <div class="prompt-line">
+          <span class="prompt">groovy_toad909@blog:~$</span> cat about.txt
+        </div>
+
+        <p>
+          I’m using this site as a public notebook for programming,
+          systems, Linux, and whatever else I break along the way.
+        </p>
+        <p>The goal: ship honest, tiny snapshots of learning.</p>
+        <p class="hint"># replace this with your real bio.</p>
+      </section>
+
+      <section id="meta" class="block">
+        <div class="prompt-line">
+          <span class="prompt">groovy_toad909@blog:~$</span> tree
+        </div>
+
+<pre class="tree">
+.
+├── index.html
+└── style.css
+
+directories (conceptual):
+  log/
+  notes/
+  about.txt
+</pre>
+
+        <p>
+          Pure HTML + CSS, no JS, no build step. Easy to host anywhere.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="prompt-line">
+        <span class="prompt">groovy_toad909@blog:~$</span>
+        echo "&copy; 2025 groovy_toad909 • static site, static brain, dynamic learning"
+      </div>
+    </footer>
   </div>
 </body>
 </html>
