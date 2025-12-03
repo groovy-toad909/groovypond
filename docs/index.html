@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>groovy-toad.sh — learning log</title>
+  <title>groovy-toad.sh</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="groovy_toad909's learning notes, experiments, and logs.">
-  <meta name="robots" content="index,follow">
+  <meta name="description" content="Learning notes and experiments by groovy_toad909.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,134 +16,54 @@
  | |  _| '__/ _ \/ _ \ '_ \| __/ _ \/ __|/ _ \
  | |_| | | |  __/  __/ |_) | ||  __/\__ \  __/
   \____|_|  \___|\___| .__/ \__\___||___/\___|
-                       |_|     learning.log
+                       |_|   
       </pre>
       <div class="hostline">
-        <span class="user">groovy_toad909</span>@<span class="host">blog</span>:<span class="path">~</span>$ echo "notes, logs, experiments"
+        <span class="user">groovy_toad909</span>@<span class="host">blog</span>:<span class="path">~</span>$ echo "learning log"
       </div>
     </header>
 
-    <nav class="nav">
-      <span class="prompt">groovy_toad909@blog:~$</span>
-      <a href="#home"   class="nav-link">cat README</a>
-      <a href="#log"    class="nav-link">ls log/</a>
-      <a href="#notes"  class="nav-link">ls notes/</a>
-      <a href="#about"  class="nav-link">cat about.txt</a>
-      <a href="#meta"   class="nav-link">tree</a>
-    </nav>
-
     <main class="main">
-      <section id="home" class="block">
+
+      <!-- BASIC SECTION TEMPLATE -->
+      <section class="block">
         <div class="prompt-line">
           <span class="prompt">groovy_toad909@blog:~$</span> cat README
         </div>
         <p>
-          This is a tiny, old-school, bash-flavored corner of the web for
-          my learning notes and experiments. Expect:
+          This is my tiny terminal-flavored corner of the web.
+          I’ll use it to keep track of what I’m learning:
         </p>
         <ul>
-          <li>short logs of what I’m learning</li>
-          <li>command snippets and configs</li>
-          <li>mistakes, fixes, and “aha” moments</li>
+          <li>commands I don’t want to forget</li>
+          <li>short notes on concepts</li>
+          <li>mistakes and fixes</li>
         </ul>
-        <p class="hint"># tip: treat each section below like a directory in your brain.</p>
-      </section>
-
-      <section id="log" class="block">
-        <div class="prompt-line">
-          <span class="prompt">groovy_toad909@blog:~$</span> ls log/
-        </div>
-        <ul class="post-list">
-          <li class="post">
-            <div class="post-header">
-              <span class="post-date">2025-12-03</span>
-              <span class="post-tags">#linux #bash</span>
-            </div>
-            <h2 class="post-title">shell-session-0001: getting comfortable with the prompt</h2>
-            <p class="post-body">
-              This is a placeholder entry. Replace me with a summary
-              of what you learned: a command, a concept, a bug you fixed.
-            </p>
-          </li>
-
-          <li class="post draft">
-            <div class="post-header">
-              <span class="post-date">WIP</span>
-              <span class="post-tags">#topic-here</span>
-            </div>
-            <h2 class="post-title">shell-session-0002: &lt;title here&gt;</h2>
-            <p class="post-body">
-              Draft post. Duplicate this block for new log entries.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="notes" class="block">
-        <div class="prompt-line">
-          <span class="prompt">groovy_toad909@blog:~$</span> ls notes/
-        </div>
-
-        <div class="notes-grid">
-          <article class="note">
-            <h3 class="note-title">notes/bash-basics.md</h3>
-            <ul class="note-list">
-              <li><code>set -euo pipefail</code> for safer scripts</li>
-              <li>quote variables: <code>"$var"</code></li>
-              <li>prefer functions instead of loose script files</li>
-            </ul>
-          </article>
-
-          <article class="note">
-            <h3 class="note-title">notes/linux-internals.md</h3>
-            <ul class="note-list">
-              <li>process vs thread</li>
-              <li>syscalls, kernel space, user space</li>
-              <li>todo: expand with more notes</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="about" class="block">
-        <div class="prompt-line">
-          <span class="prompt">groovy_toad909@blog:~$</span> cat about.txt
-        </div>
-
-        <p>
-          I’m using this site as a public notebook for programming,
-          systems, Linux, and whatever else I break along the way.
-        </p>
-        <p>The goal: ship honest, tiny snapshots of learning.</p>
-        <p class="hint"># replace this with your real bio.</p>
-      </section>
-
-      <section id="meta" class="block">
-        <div class="prompt-line">
-          <span class="prompt">groovy_toad909@blog:~$</span> tree
-        </div>
-
-<pre class="tree">
-.
-├── index.html
-└── style.css
-
-directories (conceptual):
-  log/
-  notes/
-  about.txt
-</pre>
-
-        <p>
-          Pure HTML + CSS, no JS, no build step. Easy to host anywhere.
+        <p class="hint">
+          <!-- 
+            You can edit this section’s content directly,
+            or duplicate the entire <section> block to make
+            more "entries" or "note files".
+          -->
+          # edit this text with your own intro.
         </p>
       </section>
+
+      <!-- ADD MORE SECTIONS BELOW BY COPYING THE BLOCK ABOVE -->
+      <!--
+      <section class="block">
+        <div class="prompt-line">
+          <span class="prompt">groovy_toad909@blog:~$</span> cat notes/bash-basics.txt
+        </div>
+        <p>Put some notes here...</p>
+      </section>
+      -->
+
     </main>
 
     <footer class="footer">
       <div class="prompt-line">
-        <span class="prompt">groovy_toad909@blog:~$</span>
-        echo "&copy; 2025 groovy_toad909 • static site, static brain, dynamic learning"
+        <span class="prompt">groovy_toad909@blog:~$</span> echo "&copy; 2025 groovy_toad909"
       </div>
     </footer>
   </div>
